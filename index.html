@@ -1,0 +1,875 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#063b46">
+<meta name="description" content="Prof. Dr. Puspak Samal — Orthopaedic, Joint and Spine Surgeon. Explore joint health, spine care and orthopaedic consultation information in Bhubaneswar.">
+<title>Prof. Dr. Puspak Samal | Orthopaedic & Spine Care</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy:#073744;
+  --navy2:#092c43;
+  --teal:#079c91;
+  --green:#39c99b;
+  --mint:#e6f8f2;
+  --blue:#eaf3fb;
+  --white:#fff;
+  --bg:#f7fafb;
+  --text:#152d3b;
+  --muted:#627783;
+  --line:#e2ebef;
+  --shadow:0 18px 55px rgba(8,51,65,.09);
+  --font:'DM Sans',Arial,sans-serif;
+  --head:'Manrope',Arial,sans-serif;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--white);color:var(--text);font-family:var(--font);line-height:1.65;overflow-x:clip}
+img{display:block;width:100%;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #45cbb0;outline-offset:3px}
+.container{width:min(1160px,calc(100% - 44px));margin-inline:auto}
+.section{padding:94px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--teal);font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}
+.eyebrow:before{content:"";width:24px;height:2px;background:var(--green)}
+h1,h2,h3,p{overflow-wrap:break-word}
+.section-title{font-family:var(--head);font-size:clamp(30px,4.2vw,47px);line-height:1.2;letter-spacing:-1.6px;margin:14px 0;font-weight:800}
+.section-copy{max-width:580px;color:var(--muted);font-size:14px;line-height:1.9}
+.section-heading{margin-bottom:42px}
+.section-heading.center{text-align:center}
+.section-heading.center .eyebrow{justify-content:center}
+.section-heading.center .section-copy{margin-inline:auto}
+.btn{min-height:50px;padding:13px 21px;display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:7px;border:1px solid transparent;font-size:12px;font-weight:800;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--teal);color:white}
+.btn-primary:hover{background:#087c77}
+.btn-white{background:white;color:var(--navy)}
+.btn-outline{border-color:#d0e2e8;color:var(--navy);background:white}
+.btn-outline:hover{background:var(--mint)}
+.btn-dark{background:var(--navy);color:white}
+.btn-block{width:100%}
+
+/* Announcement */
+.announcement{background:var(--navy2);color:#e9fffa;text-align:center;padding:8px 12px;font-size:10px;letter-spacing:1px}
+.announcement strong{color:#65e0bc}
+
+/* Navigation */
+.header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:78px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-logo{width:45px;height:45px;flex-shrink:0;display:grid;place-items:center;border-radius:12px;background:linear-gradient(140deg,var(--teal),var(--navy));color:white;font-weight:800;font-size:19px}
+.brand-name{display:block;font-family:var(--head);font-size:14px;font-weight:800;line-height:1.4}
+.brand-sub{display:block;color:var(--muted);font-size:9px;letter-spacing:1px}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links>a:not(.btn){font-size:11px;font-weight:700;color:#405b68}
+.nav-links>a:not(.btn):hover{color:var(--teal)}
+.nav-links .btn{min-height:44px;padding:10px 15px}
+.menu-toggle{display:none;width:46px;height:46px;background:white;border:1px solid var(--line);border-radius:7px;font-size:22px;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;isolation:isolate;overflow:hidden;background:var(--navy);color:white}
+.hero:before{position:absolute;content:"";inset:0;z-index:-2;background:linear-gradient(90deg,rgba(5,40,56,.97) 0%,rgba(5,53,66,.92) 45%,rgba(5,53,66,.25) 100%),url('https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1800&q=85') center/cover no-repeat}
+.hero:after{position:absolute;content:"";inset:0;z-index:-1;background:radial-gradient(circle at 85% 25%,rgba(45,208,166,.16),transparent 30%)}
+.hero-grid{min-height:610px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:45px;padding-block:75px}
+.hero .eyebrow{color:#73e6c5}
+.hero h1{font-family:var(--head);font-size:clamp(39px,5.2vw,67px);line-height:1.1;letter-spacing:-2.6px;margin:20px 0;font-weight:800}
+.hero h1 span{color:#63dfbd}
+.hero-description{max-width:540px;color:#d3e7ec;font-size:14px;line-height:1.95}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-note{margin-top:30px;display:flex;align-items:center;gap:10px;color:#d8e9ed;font-size:11px}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#54e0a8;box-shadow:0 0 0 5px rgba(84,224,168,.12)}
+.hero-visual{position:relative;min-width:0;align-self:end}
+.doctor-photo{width:100%;height:480px;object-fit:cover;object-position:center top;border-radius:180px 180px 18px 18px;background:#d6eae7;border:1px solid rgba(255,255,255,.2)}
+.doctor-badge{position:absolute;left:-25px;bottom:28px;max-width:245px;padding:17px 19px;background:white;color:var(--navy);border-radius:10px;box-shadow:var(--shadow)}
+.doctor-badge strong{display:block;font-size:12px}
+.doctor-badge span{display:block;color:var(--muted);font-size:10px;margin-top:4px}
+.badge-check{color:var(--teal);font-size:19px;margin-right:6px}
+
+/* Trust strip */
+.trust-strip{background:#f4fbf9;border-bottom:1px solid #dcefe9}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{padding:23px 12px;display:flex;align-items:center;justify-content:center;gap:12px;border-right:1px solid #dcefe9}
+.trust-item:last-child{border:0}
+.trust-icon{font-size:24px;color:var(--teal)}
+.trust-item strong{display:block;font-size:12px}
+.trust-item small{display:block;font-size:10px;color:var(--muted);margin-top:3px}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:70px}
+.about-visual{position:relative;padding:0 25px 25px 0}
+.about-visual img{height:440px;object-fit:cover;border-radius:12px}
+.about-caption{position:absolute;right:0;bottom:0;max-width:225px;background:var(--navy);color:white;padding:18px 20px;border:5px solid white;border-radius:10px}
+.about-caption strong{font-size:13px;display:block}
+.about-caption span{font-size:10px;color:#bfece1}
+.about-copy p{font-size:13px;color:var(--muted);line-height:2}
+.about-points{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:27px 0}
+.about-point{padding:15px;border:1px solid var(--line);border-radius:8px;background:#fcfefe}
+.about-point strong{display:block;font-size:12px}
+.about-point span{display:block;margin-top:5px;font-size:10px;color:var(--muted)}
+.check{color:var(--teal);font-weight:800;margin-right:5px}
+
+/* Services */
+.services{background:var(--bg)}
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.service-card{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.service-img{height:220px;overflow:hidden;background:#e8f1f3}
+.service-img img{height:100%;object-fit:cover;transition:transform .45s}
+.service-card:hover .service-img img{transform:scale(1.045)}
+.service-body{padding:23px}
+.service-num{font-size:10px;font-weight:800;color:var(--teal);letter-spacing:1.5px}
+.service-body h3{font-family:var(--head);font-size:18px;margin:8px 0;font-weight:800}
+.service-body p{font-size:12px;color:var(--muted);line-height:1.9;margin:0 0 14px}
+.service-link{display:inline-flex;align-items:center;min-height:42px;color:var(--teal);font-size:11px;font-weight:800}
+
+/* Awareness */
+.awareness{background:linear-gradient(135deg,#e8f8f2,#eff6fb)}
+.awareness-grid{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:60px}
+.awareness-img{height:390px;object-fit:cover;border-radius:14px}
+.awareness-list{display:grid;gap:13px;margin:25px 0}
+.awareness-list a{min-height:55px;display:flex;align-items:center;gap:13px;padding:12px 14px;background:white;border:1px solid #dcece8;border-radius:8px;font-size:12px;font-weight:700}
+.awareness-list a span{font-size:20px;color:var(--teal)}
+.awareness-list a b{margin-left:auto;color:var(--teal)}
+
+/* Appointment */
+.appointment{background:var(--navy);color:white}
+.appointment-grid{display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:70px}
+.appointment .section-title{color:white}
+.appointment .section-copy{color:#c9dfe5}
+.appointment-list{display:grid;gap:14px;margin:25px 0}
+.appointment-list div{display:flex;gap:12px;color:#e2f0f2;font-size:12px}
+.appointment-list span{color:#66e0bd}
+.appointment-card{background:white;color:var(--text);padding:30px;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.12)}
+.appointment-card h3{font-family:var(--head);font-size:23px;margin:0 0 5px}
+.appointment-card>p{font-size:11px;color:var(--muted);margin:0 0 23px}
+.form-group{margin-bottom:15px}
+.form-group label{display:block;font-size:11px;font-weight:800;margin-bottom:6px}
+.form-group input,.form-group select,.form-group textarea{display:block;width:100%;min-height:48px;padding:12px;border:1px solid #dce5e9;border-radius:6px;background:#fff;color:var(--text);font-size:13px}
+.form-group textarea{min-height:85px;resize:vertical}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--teal);outline:2px solid #d6f3ea}
+.form-status{font-size:11px;color:var(--teal);margin-top:10px}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-question{width:100%;min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:transparent;border:0;padding:16px 0;font-size:13px;font-weight:800;cursor:pointer}
+.faq-question span:last-child{font-size:20px;color:var(--teal)}
+.faq-answer{display:none;color:var(--muted);font-size:12px;line-height:1.9;padding:0 20px 20px 0}
+.faq-item.open .faq-answer{display:block}
+
+/* Contact */
+.contact{background:#f3faf8}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}
+.contact-cards{display:grid;gap:13px;margin-top:25px}
+.contact-row{display:flex;gap:14px;align-items:center;padding:17px;background:white;border:1px solid var(--line);border-radius:8px}
+.contact-icon{width:43px;height:43px;display:grid;place-items:center;background:var(--mint);color:var(--teal);border-radius:8px;font-size:20px;flex-shrink:0}
+.contact-row strong{display:block;font-size:12px}
+.contact-row p{margin:3px 0 0;font-size:11px;color:var(--muted)}
+.contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+
+/* Footer */
+.footer{background:#062c38;color:#e7f4f4;padding:60px 0 23px}
+.footer-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:45px;padding-bottom:35px}
+.footer .brand-sub{color:#aac8ce}
+.footer-description{max-width:350px;color:#b7cdd1;font-size:12px;line-height:2;margin-top:18px}
+.footer h4{font-size:11px;text-transform:uppercase;letter-spacing:1.3px;color:#71e0c0;margin:5px 0 17px}
+.footer-links{display:grid;gap:11px}
+.footer-links a{width:fit-content;color:#d0e2e4;font-size:12px}
+.footer-links a:hover{color:#75e6c6}
+.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:20px;border-top:1px solid #28505b;color:#a9c1c7;font-size:10px}
+
+/* Floating contact */
+.floating-actions{position:fixed;z-index:90;right:18px;bottom:20px;display:grid;gap:10px}
+.fab{width:52px;height:52px;display:grid;place-items:center;border-radius:50%;color:white;box-shadow:0 5px 20px #092c4330;transition:transform .2s}
+.fab:hover{transform:translateY(-3px)}
+.fab svg{width:23px;height:23px;fill:currentColor}
+.fab-call{background:var(--navy)}
+.fab-whatsapp{background:#168c58}
+
+/* Responsive */
+@media(max-width:950px){
+ .nav-links{gap:13px}
+ .nav-links>a:not(.btn){font-size:10px}
+ .hero-grid{gap:25px}
+ .doctor-photo{height:410px}
+ .about-grid,.awareness-grid,.appointment-grid{gap:35px}
+ .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .trust-item{justify-content:flex-start}
+}
+@media(max-width:700px){
+ .container{width:calc(100% - 34px)}
+ .section{padding:68px 0}
+ .announcement{font-size:9px;letter-spacing:.5px}
+ .nav{min-height:68px}
+ .brand-logo{width:40px;height:40px}
+ .brand-name{font-size:12px}
+ .brand-sub{font-size:8px;letter-spacing:.5px}
+ .menu-toggle{display:grid;place-items:center;flex-shrink:0}
+ .nav-links{display:none;position:absolute;left:0;right:0;top:100%;padding:12px 18px 20px;background:white;border-bottom:1px solid var(--line);box-shadow:0 12px 20px #092c4310}
+ .nav-links.open{display:flex;flex-direction:column;align-items:stretch;gap:0}
+ .nav-links>a:not(.btn){min-height:48px;display:flex;align-items:center;border-bottom:1px solid var(--line);font-size:13px}
+ .nav-links .btn{margin-top:13px}
+ .hero-grid{grid-template-columns:1fr;gap:30px;padding-block:58px 0}
+ .hero h1{font-size:clamp(39px,10vw,57px);letter-spacing:-1.8px}
+ .hero-description{font-size:13px}
+ .hero-visual{width:min(100%,370px);justify-self:center}
+ .doctor-photo{height:360px;object-position:center 20%;border-radius:150px 150px 12px 12px}
+ .doctor-badge{left:-5px;bottom:18px;max-width:210px;padding:13px}
+ .hero-note{font-size:10px}
+ .trust-grid{grid-template-columns:1fr 1fr}
+ .trust-item{padding:17px 8px;gap:8px;border-bottom:1px solid #dcefe9}
+ .trust-item:nth-child(2){border-right:0}
+ .trust-item:nth-child(3),.trust-item:nth-child(4){border-bottom:0}
+ .trust-icon{font-size:21px}
+ .trust-item strong{font-size:11px}
+ .trust-item small{font-size:9px}
+ .about-grid,.awareness-grid,.appointment-grid,.faq-grid,.contact-grid{grid-template-columns:1fr;gap:32px}
+ .about-visual img{height:340px}
+ .about-caption{max-width:190px;padding:13px}
+ .about-points{gap:10px}
+ .about-point{padding:12px}
+ .service-grid{grid-template-columns:1fr 1fr;gap:12px}
+ .service-img{height:170px}
+ .service-body{padding:15px}
+ .service-body h3{font-size:15px}
+ .service-body p{font-size:11px}
+ .service-num{font-size:9px}
+ .awareness-img{height:300px}
+ .appointment-card{padding:23px 18px}
+ .section-heading{margin-bottom:28px}
+ .footer-grid{grid-template-columns:1fr 1fr;gap:30px 20px}
+ .footer-brand-block{grid-column:1/-1}
+ .footer-bottom{flex-direction:column;gap:8px}
+ .floating-actions{right:12px;bottom:14px;gap:8px}
+ .fab{width:48px;height:48px}
+}
+@media(max-width:360px){
+ .container{width:calc(100% - 26px)}
+ .brand{gap:8px}
+ .brand-name{font-size:11px}
+ .hero h1{font-size:36px}
+ .hero-actions .btn{padding-inline:13px}
+ .service-grid{grid-template-columns:1fr}
+ .service-img{height:210px}
+ .about-points{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+}
+</style>
+</head>
+
+<body>
+<div class="announcement">
+  ORTHOPAEDIC • JOINT • SPINE CARE &nbsp; <strong>✦</strong> &nbsp; KNOW YOUR OPTIONS
+</div>
+
+<header class="header">
+  <div class="container nav">
+    <a href="#home" class="brand" aria-label="Prof. Dr. Puspak Samal home">
+      <span class="brand-logo">PS</span>
+      <span>
+        <span class="brand-name">PROF. DR. PUSPAK SAMAL</span>
+        <span class="brand-sub">ORTHOPAEDIC · JOINT · SPINE SURGEON</span>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu"
+      aria-expanded="false" aria-controls="navLinks">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About Doctor</a>
+      <a href="#services">Specialities</a>
+      <a href="#awareness">Health Library</a>
+      <a href="#faq">FAQs</a>
+      <a href="#appointment" class="btn btn-primary">Book an Enquiry ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Orthopaedic · Joint · Spine Care</span>
+        <h1>Move Better.<br>Live With <span>Confidence.</span></h1>
+        <p class="hero-description">
+          Meet Prof. Dr. Puspak Samal, an orthopaedic, joint and spine surgeon.
+          Explore educational resources and get in touch to enquire about
+          consultations and treatment options.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#appointment">Enquire About Consultation ↗</a>
+          <a class="btn btn-white" href="tel:+917873366631">☎ &nbsp; Call the Clinic</a>
+        </div>
+        <div class="hero-note">
+          <span class="status-dot"></span>
+          <span>Consultation details can be confirmed directly by phone.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Replace this stock image with the doctor's approved portrait. -->
+        <img class="doctor-photo"
+          src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=85"
+          alt="Doctor portrait placeholder — replace with Prof. Dr. Puspak Samal's approved photograph"
+          fetchpriority="high">
+        <div class="doctor-badge">
+          <strong><span class="badge-check">✓</span>Prof. Dr. Puspak Samal</strong>
+          <span>Orthopaedic, Joint & Spine Surgeon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip" aria-label="Areas of focus">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <span class="trust-icon">✚</span>
+        <div><strong>Orthopaedics</strong><small>Bone & joint health</small></div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">⌁</span>
+        <div><strong>Spine Care</strong><small>Back & neck concerns</small></div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">◎</span>
+        <div><strong>Joint Health</strong><small>Mobility & function</small></div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">♡</span>
+        <div><strong>Patient Education</strong><small>Informed conversations</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1000&q=85"
+          alt="Medical professional in a clinical environment"
+          loading="lazy" decoding="async">
+        <div class="about-caption">
+          <strong>Care. Clarity. Confidence.</strong>
+          <span>Start with a conversation about your needs.</span>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <span class="eyebrow">Meet the Doctor</span>
+        <h2 class="section-title">Expertise Focused on Better Mobility.</h2>
+        <p>
+          Prof. Dr. Puspak Samal is presented on his Instagram profile as an
+          orthopaedic, joint and spine surgeon associated with KIMS, Bhubaneswar.
+          His profile also highlights minimally invasive surgery.
+        </p>
+        <p>
+          This website is designed to make it easier for patients and families
+          to explore orthopaedic health information and enquire about a consultation.
+          Individual treatment decisions require an assessment by a qualified clinician.
+        </p>
+
+        <div class="about-points">
+          <div class="about-point">
+            <strong><span class="check">✓</span>Joint Care</strong>
+            <span>Learn about joint symptoms and care options.</span>
+          </div>
+          <div class="about-point">
+            <strong><span class="check">✓</span>Spine Health</strong>
+            <span>Explore back and neck health information.</span>
+          </div>
+          <div class="about-point">
+            <strong><span class="check">✓</span>Minimally Invasive</strong>
+            <span>Ask about appropriate treatment approaches.</span>
+          </div>
+          <div class="about-point">
+            <strong><span class="check">✓</span>Patient Awareness</strong>
+            <span>Prepare informed questions for your appointment.</span>
+          </div>
+        </div>
+
+        <a href="#appointment" class="btn btn-dark">Enquire About a Consultation ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALITIES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-heading center">
+        <span class="eyebrow">Areas of Specialisation</span>
+        <h2 class="section-title">Orthopaedic Care, Explained.</h2>
+        <p class="section-copy">
+          Explore common areas of orthopaedic care. The right evaluation and
+          treatment depend on each person's symptoms, examination and medical history.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=750&q=80"
+              alt="Medical consultation" loading="lazy" decoding="async">
+          </div>
+          <div class="service-body">
+            <span class="service-num">01 / JOINT HEALTH</span>
+            <h3>Joint Pain & Mobility</h3>
+            <p>Learn about common joint symptoms, mobility concerns and when to seek a clinical assessment.</p>
+            <a class="service-link" href="#appointment">Enquire About Care ↗</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=750&q=80"
+              alt="Clinical healthcare environment" loading="lazy" decoding="async">
+          </div>
+          <div class="service-body">
+            <span class="service-num">02 / SPINE HEALTH</span>
+            <h3>Back & Neck Concerns</h3>
+            <p>Explore spine health education and prepare questions about persistent back or neck symptoms.</p>
+            <a class="service-link" href="#appointment">Enquire About Care ↗</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=750&q=80"
+              alt="Orthopaedic clinical care" loading="lazy" decoding="async">
+          </div>
+          <div class="service-body">
+            <span class="service-num">03 / ORTHOPAEDICS</span>
+            <h3>Bone & Joint Conditions</h3>
+            <p>Get guidance on arranging an evaluation for orthopaedic symptoms and discussing treatment choices.</p>
+            <a class="service-link" href="#appointment">Enquire About Care ↗</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=750&q=80"
+              alt="Medical team in a hospital" loading="lazy" decoding="async">
+          </div>
+          <div class="service-body">
+            <span class="service-num">04 / SURGICAL OPTIONS</span>
+            <h3>Minimally Invasive Surgery</h3>
+            <p>Discuss whether a minimally invasive approach is appropriate for a specific diagnosed condition.</p>
+            <a class="service-link" href="#appointment">Enquire About Care ↗</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=750&q=80"
+              alt="Modern hospital environment" loading="lazy" decoding="async">
+          </div>
+          <div class="service-body">
+            <span class="service-num">05 / JOINT PROCEDURES</span>
+            <h3>Joint Replacement Information</h3>
+            <p>Learn what to ask about assessment, potential benefits, risks and recovery after joint replacement.</p>
+            <a class="service-link" href="#appointment">Enquire About Care ↗</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=750&q=80"
+              alt="Doctor discussing health with a patient" loading="lazy" decoding="async">
+          </div>
+          <div class="service-body">
+            <span class="service-num">06 / AWARENESS</span>
+            <h3>Patient Education</h3>
+            <p>Understand health information and discuss individual concerns with your treating clinician.</p>
+            <a class="service-link" href="#awareness">Explore Health Topics ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEALTH AWARENESS -->
+  <section class="section awareness" id="awareness">
+    <div class="container awareness-grid">
+      <div>
+        <img class="awareness-img"
+          src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=85"
+          alt="Healthcare professional and medical education"
+          loading="lazy" decoding="async">
+      </div>
+
+      <div>
+        <span class="eyebrow">Health Awareness</span>
+        <h2 class="section-title">Understand Your Body. Ask Better Questions.</h2>
+        <p class="section-copy">
+          Explore common orthopaedic topics inspired by the educational themes
+          featured on the doctor's Instagram profile.
+        </p>
+
+        <div class="awareness-list">
+          <a href="https://www.instagram.com/dr_puspak_samal/" target="_blank" rel="noopener">
+            <span>◎</span> Joint health awareness <b>↗</b>
+          </a>
+          <a href="https://www.instagram.com/dr_puspak_samal/" target="_blank" rel="noopener">
+            <span>⌁</span> Spine health education <b>↗</b>
+          </a>
+          <a href="https://www.instagram.com/dr_puspak_samal/" target="_blank" rel="noopener">
+            <span>＋</span> Orthopaedic myths and facts <b>↗</b>
+          </a>
+          <a href="https://www.instagram.com/dr_puspak_samal/" target="_blank" rel="noopener">
+            <span>♡</span> Injury prevention and mobility <b>↗</b>
+          </a>
+        </div>
+
+        <p style="font-size:10px;color:var(--muted)">
+          Links open Instagram. Educational content does not replace individual medical advice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT -->
+  <section class="section appointment" id="appointment">
+    <div class="container appointment-grid">
+      <div>
+        <span class="eyebrow" style="color:#73e6c5">Take the Next Step</span>
+        <h2 class="section-title">Your Health Questions Deserve Attention.</h2>
+        <p class="section-copy">
+          Contact the clinic to enquire about consultation availability,
+          location, timings and the next steps for an appointment.
+        </p>
+        <div class="appointment-list">
+          <div><span>✓</span> Ask about consultation availability and timings.</div>
+          <div><span>✓</span> Confirm the clinic location before visiting.</div>
+          <div><span>✓</span> Share a brief, non-emergency appointment enquiry.</div>
+        </div>
+        <a class="btn btn-white" href="tel:+917873366631">☎ &nbsp; Call 7873366631</a>
+      </div>
+
+      <form class="appointment-card" id="appointmentForm">
+        <h3>Consultation Enquiry</h3>
+        <p>Complete the form to prepare a WhatsApp enquiry to the clinic.</p>
+
+        <div class="form-group">
+          <label for="patientName">Your Name *</label>
+          <input id="patientName" name="name" type="text" autocomplete="name"
+            placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="patientPhone">Your Phone Number *</label>
+          <input id="patientPhone" name="phone" type="tel" autocomplete="tel"
+            inputmode="tel" pattern="[0-9+() -]{8,18}"
+            placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="consultType">Enquiry Type</label>
+          <select id="consultType" name="type">
+            <option>General orthopaedic consultation</option>
+            <option>Joint health enquiry</option>
+            <option>Spine health enquiry</option>
+            <option>Joint replacement enquiry</option>
+            <option>Minimally invasive surgery enquiry</option>
+            <option>Clinic timings and location</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="patientMessage">Brief Message (Optional)</label>
+          <textarea id="patientMessage" name="message"
+            placeholder="Briefly describe your appointment enquiry. Avoid sharing sensitive medical records here."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Continue on WhatsApp ↗</button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        <p style="font-size:10px;color:var(--muted);line-height:1.7">
+          This form opens WhatsApp; it does not save your details to a website database.
+          For urgent or life-threatening symptoms, contact local emergency services.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container faq-grid">
+      <div>
+        <span class="eyebrow">Frequently Asked Questions</span>
+        <h2 class="section-title">Before You Visit.</h2>
+        <p class="section-copy">
+          Find out how to contact the clinic and prepare for an orthopaedic consultation.
+        </p>
+        <a href="#appointment" class="btn btn-outline" style="margin-top:20px">Ask a Question ↗</a>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question" aria-expanded="true">
+            <span>How can I enquire about a consultation?</span><span>−</span>
+          </button>
+          <div class="faq-answer">
+            Call 7873366631 or use the enquiry form to start a WhatsApp conversation.
+            Confirm availability and appointment arrangements directly with the clinic.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Where is the doctor associated with?</span><span>+</span>
+          </button>
+          <div class="faq-answer">
+            The Instagram profile identifies KIMS, Bhubaneswar. Please contact
+            the clinic to confirm the current consultation location and schedule.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What should I bring to an appointment?</span><span>+</span>
+          </button>
+          <div class="faq-answer">
+            If available, bring relevant previous prescriptions, investigation
+            reports, imaging reports and a list of medicines. Confirm any
+            specific requirements with the clinic.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I get medical advice through this website?</span><span>+</span>
+          </button>
+          <div class="faq-answer">
+            This website provides general information and a contact route.
+            Diagnosis and treatment recommendations require appropriate clinical
+            assessment. Do not use the form for emergencies.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Does every patient need surgery?</span><span>+</span>
+          </button>
+          <div class="faq-answer">
+            No. Treatment depends on the diagnosis and individual circumstances.
+            A clinician can discuss suitable options, including their benefits,
+            limitations and risks.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <span class="eyebrow">Contact Information</span>
+        <h2 class="section-title">Get in Touch With the Clinic.</h2>
+        <p class="section-copy">
+          For appointment availability, current consultation timings and
+          location details, please contact the clinic directly.
+        </p>
+
+        <div class="contact-cards">
+          <a class="contact-row" href="tel:+917873366631">
+            <span class="contact-icon">☎</span>
+            <span><strong>Phone</strong><p>7873366631</p></span>
+          </a>
+          <a class="contact-row" href="https://wa.me/917873366631" target="_blank" rel="noopener">
+            <span class="contact-icon">◉</span>
+            <span><strong>WhatsApp</strong><p>Start an appointment enquiry</p></span>
+          </a>
+          <div class="contact-row">
+            <span class="contact-icon">⌖</span>
+            <span><strong>Hospital affiliation in profile</strong><p>KIMS, Bhubaneswar — confirm current location before visiting.</p></span>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="tel:+917873366631">Call Now</a>
+          <a class="btn btn-outline" href="https://wa.me/917873366631" target="_blank" rel="noopener">WhatsApp ↗</a>
+        </div>
+      </div>
+
+      <div>
+        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1000&q=85"
+          alt="Hospital and healthcare facility"
+          style="height:390px;object-fit:cover;border-radius:12px"
+          loading="lazy" decoding="async">
+        <p style="font-size:10px;color:var(--muted);margin-top:10px">
+          Illustrative healthcare image. Contact the clinic for verified address and directions.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <a href="#home" class="brand">
+          <span class="brand-logo">PS</span>
+          <span>
+            <span class="brand-name">PROF. DR. PUSPAK SAMAL</span>
+            <span class="brand-sub">ORTHOPAEDIC · JOINT · SPINE SURGEON</span>
+          </span>
+        </a>
+        <p class="footer-description">
+          An informational website concept for orthopaedic and spine health
+          awareness, with a convenient route to contact the clinic.
+        </p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <div class="footer-links">
+          <a href="#about">About the Doctor</a>
+          <a href="#services">Specialities</a>
+          <a href="#awareness">Health Awareness</a>
+          <a href="#faq">FAQs</a>
+          <a href="#appointment">Consultation Enquiry</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <div class="footer-links">
+          <a href="tel:+917873366631">7873366631</a>
+          <a href="https://wa.me/917873366631" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.instagram.com/dr_puspak_samal/" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="#contact">Clinic Information</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="font-size:10px;color:#b6cbd0;line-height:1.8;margin-bottom:20px">
+      Medical disclaimer: This website provides general educational information only and does not establish a doctor-patient relationship. It does not replace a professional examination, diagnosis or individualized treatment advice. Verify all credentials, hospital affiliation, contact details and consultation arrangements before publishing.
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Prof. Dr. Puspak Samal. All rights reserved.</span>
+      <a href="#home" style="color:#71e0c0">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating contact buttons -->
+<div class="floating-actions" aria-label="Quick contact options">
+  <a class="fab fab-call" href="tel:+917873366631" aria-label="Call the clinic" title="Call Now">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.56 3.57.56a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.56 3.57a1 1 0 01-.25 1.02l-2.19 2.2z"/>
+    </svg>
+  </a>
+  <a class="fab fab-whatsapp" href="https://wa.me/917873366631?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20consultation."
+     target="_blank" rel="noopener" aria-label="WhatsApp the clinic" title="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.52 3.48A11.83 11.83 0 0012.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.15 1.59 5.96L.05 24l6.26-1.64a11.9 11.9 0 005.76 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.18-1.24-6.17-3.49-8.42zM12.08 21.8h-.01a9.9 9.9 0 01-5.04-1.38l-.36-.21-3.72.98.99-3.63-.24-.37a9.85 9.85 0 01-1.52-5.26c0-5.47 4.45-9.92 9.92-9.92a9.86 9.86 0 017.02 2.91 9.86 9.86 0 012.9 7.02c0 5.47-4.45 9.92-9.92 9.92zm5.44-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.46-.89-.8-1.49-1.78-1.66-2.08-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.3 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/>
+    </svg>
+  </a>
+</div>
+
+<script>
+"use strict";
+
+// Mobile navigation
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const opened = navLinks.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(opened));
+  menuToggle.setAttribute("aria-label", opened ? "Close menu" : "Open menu");
+  menuToggle.textContent = opened ? "×" : "☰";
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open menu");
+    menuToggle.textContent = "☰";
+  });
+});
+
+// FAQ accordion
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const current = button.closest(".faq-item");
+    const wasOpen = current.classList.contains("open");
+
+    document.querySelectorAll(".faq-item").forEach(item => {
+      item.classList.remove("open");
+      item.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+      item.querySelector(".faq-question span:last-child").textContent = "+";
+    });
+
+    if (!wasOpen) {
+      current.classList.add("open");
+      button.setAttribute("aria-expanded", "true");
+      button.querySelector("span:last-child").textContent = "−";
+    }
+  });
+});
+
+// Appointment enquiry opens WhatsApp; no server or database is involved.
+document.getElementById("appointmentForm").addEventListener("submit", event => {
+  event.preventDefault();
+
+  const name = document.getElementById("patientName").value.trim();
+  const phone = document.getElementById("patientPhone").value.trim();
+  const type = document.getElementById("consultType").value;
+  const message = document.getElementById("patientMessage").value.trim();
+  const status = document.getElementById("formStatus");
+
+  if (!name || !phone) {
+    status.textContent = "Please enter your name and phone number.";
+    return;
+  }
+
+  const digits = phone.replace(/\D/g, "");
+  if (digits.length < 8 || digits.length > 15) {
+    status.textContent = "Please enter a valid phone number.";
+    return;
+  }
+
+  const text = [
+    "Hello, I would like to enquire about a consultation.",
+    "",
+    "Name: " + name,
+    "My phone: " + phone,
+    "Enquiry: " + type,
+    "Message: " + (message || "Please share appointment availability and details."),
+    "",
+    "Please let me know the next steps."
+  ].join("\n");
+
+  const url = "https://wa.me/917873366631?text=" + encodeURIComponent(text);
+  status.textContent = "Opening WhatsApp...";
+
+  const popup = window.open(url, "_blank");
+  if (popup) popup.opener = null;
+  else window.location.href = url;
+});
+
+// Current year
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
